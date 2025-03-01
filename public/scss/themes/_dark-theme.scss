@@ -1,0 +1,152 @@
+@import "themes";
+
+:root {
+  @include theme-properties(map-get($themes, light));
+}
+
+html.dark-theme {
+  @include theme-properties(map-get($themes, dark));
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar {
+  background-color: var(--secondary-color) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+}
+
+.btn-order {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  
+  &:hover {
+    background-color: var(--primary-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.form-control {
+  background-color: var(--primary-color);
+  border-color: var(--accent-color);
+  color: var(--text-color);
+  
+  &::placeholder {
+    color: rgba(var(--text-color), 0.6);
+  }
+}
+
+.theme-bg {
+  background-color: var(--bg-color) !important;
+}
+
+.theme-bg-dark {
+  background-color: var(--secondary-color) !important;
+}
+
+.theme-contact {
+  background-color: var(--primary-color) !important;
+  border: 2px solid var(--text-color) !important;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Контейнеры
+.container,
+.container-fluid {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+// Секции
+section {
+  overflow-x: hidden;
+}
+
+// Карточки в Portfolio
+.custom-card {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 100%;
+}
+
+.navbar {
+  background-color: var(--secondary-color) !important;
+  transition: background-color 0.3s ease;
+
+  .nav-link {
+    color: var(--text-color) !important;
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  .navbar-brand {
+    color: var(--bg-color);
+  }
+}
+
+.card {
+  background-color: var(--primary-color) !important;
+  color: var(--text-color);
+  border-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  .card-title {
+    color: var(--text-color) !important;
+  }
+}
+
+.btn-order,
+.btn-more {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--accent-color) !important;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease !important;
+
+  .btn-tryfree {
+    background-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--accent-color) !important;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  &:hover {
+    background-color: var(--accent-color) !important;
+    border-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+  }
+}
+
+.theme-text {
+  color: var(--text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+:root {
+    --text: #0c1211;
+    --background: #e7efed;
+    --primary: #41534f;
+    --secondary: #9db4be;
+    --accent: #597082;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 1.5rem;
+    background: var(--text);
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.error-content {
+    max-width: 600px;
+}
+
+.error-code {
+    font-size: 8rem;
+    margin: 0;
+    animation: float 3s ease-in-out infinite;
+    color: var(--accent);
+}
+
+.error-message {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 2rem;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(108, 134, 155, 0.4);
+    }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 5rem;
+    }
+    
+    .error-message {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,21 @@
+.portfolio {
+    .custom-card {
+      @include custom-card;
+      transition: transform 1.5s ease;
+      box-shadow: black 0px 1px 5px 0.1px;
+  
+      &:hover {
+        animation: pulse 3s infinite;
+        transform: scale(0.98);
+      }
+    }
+  }
+
+  .portfolio.row {
+    justify-content: center !important;
+  
+    .col-md-6 {
+      display: flex;
+      justify-content: center;
+    }
+  }

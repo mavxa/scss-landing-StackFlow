@@ -1,0 +1,22 @@
+.portfolio {
+    .custom-card {
+      transition: transform 1s ease;
+      box-shadow: black 0px 1px 5px 0.1px;
+  
+      &:hover {
+        animation: pulse 3s infinite;
+        transform: scale(0.84);
+      }
+
+          // Для мобильных
+    @media (max-width: 480px) {
+      width: 95%;
+      padding: 1rem;
+      border-radius: 0.8em;
+      
+      .login-box h2 {
+        font-size: 1.5rem;
+      }
+    }
+    }
+  }

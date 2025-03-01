@@ -1,0 +1,24 @@
+$themes: (
+ light: (
+   text: #0c1211,
+   background: #e7efed,
+   primary: #789a94,
+   secondary: #9db4be,
+   accent: #597082,
+ ),
+ dark: (
+   text: #edf3f2,
+   background: #101816,
+   primary: #658680,
+   secondary: #415862,
+   accent: #7d94a6,
+ ),
+);
+
+@mixin theme-properties($theme) {
+  --text-color: #{map-get($theme, text)};
+  --bg-color: #{map-get($theme, background)};
+  --primary-color: #{map-get($theme, primary)};
+  --secondary-color: #{map-get($theme, secondary)};
+  --accent-color: #{map-get($theme, accent)};
+}

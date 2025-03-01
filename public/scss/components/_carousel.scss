@@ -1,0 +1,13 @@
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(100%);
+}
+
+.carousel .review-image {
+  @include profile-image;
+  // Переопределение размера для мобильных
+  @media (max-width: 576px) {
+    $size: 40px;
+    $margin-right: 1rem;
+  }
+}

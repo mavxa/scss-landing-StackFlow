@@ -1,0 +1,27 @@
+// components/_buttons.scss
+
+.btn-order {
+  @include button(#d1d1d1, #000000, 0.3em);
+}
+
+.btn-tryfree {
+  @include button(#000000, #ffffff, 0.3em);
+  &:hover {
+    background-color: var(--accent-color) !important;
+    border-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+  }
+}
+
+.btn-more {
+  @include button(#000000, #ffffff, 2em, 12px);
+}
+
+// Кастомные стили для кнопок карусели
+.carousel-control-prev {
+  @include btn-prev();
+}
+
+.carousel-control-next {
+  @include btn-next();
+}

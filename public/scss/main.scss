@@ -1,0 +1,20 @@
+// Абстракты
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+// Темы 
+@import "themes/themes";
+@import "themes/dark-theme";
+
+// Базовые стили
+@import "base/animations";
+@import "components/cards";
+
+// Компоненты 
+@import "components/carousel";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+@import "components/buttons";
+@import "components/forms";

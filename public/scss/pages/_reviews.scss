@@ -1,0 +1,16 @@
+.review-container {
+    .btn-next {
+      @include btn-next();
+    }
+  
+    .btn-prev {
+      @include btn-prev();
+    }
+  }
+  
+  .review-card {
+    .review-image {
+      @include profile-image();
+    }
+  }
+  
