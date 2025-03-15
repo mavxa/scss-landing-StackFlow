@@ -15,47 +15,52 @@
 
 <body class="theme-bg">
 
-    <!-- navbar -->
+    <!-- Navbar -->
 
     <section class="mt-5 py-4" id="navbar">
-
-        <nav class="navbar navbar-expand-lg text-center fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="bi bi-terminal fs-1"></i></a> <!--псевдо-логоотип -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <a class="navbar-brand" href="#"><i class="bi bi-terminal fs-1"></i></a> <!-- Логотип -->
+                <button class="navbar-toggler theme-bg" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse fs-5" id="navbarNav">
-                    <ul class="navbar-nav text-start">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Главная</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#about">О нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#portfolio">Портфолио</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#reviews">Отзывы</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#contact">Контактная форма</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ms-auto text-start">
-                        <li class="nav-item">
-                            <button class="btn btn-order me-2" data-bs-toggle="modal"
-                                data-bs-target="#orderModal">Заказать <i class="px-1 bi bi-basket"></i></button>
-                            <button class="btn btn-order" id="theme-toggle">Сменить тему<i class=""></i></button>
+
+                    <ul class="navbar-nav ms-auto d-lg-none d-flex d-colu">
+                        <button class="btn btn-order mt-1 mb-1" data-bs-toggle="modal"
+                            data-bs-target="#orderModal">Заказать <i class="px-1 bi bi-basket "></i></button>
+                        <button class="btn btn-order mb-1" id="theme-toggle">Сменить тему<i class=""></i></button>
+                        <li class="nav-item dropdown">
+                            <button class="btn d-flex ms-auto theme-bg fs-4 mt-1" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </button>
+
+                            <ul class="dropdown-menu fade theme-bg text-center fs-5 mb-1">
+                                <li><a class="text-decoration-none theme-text" href="#home">Главная</a></li>
+                                <li><a class="text-decoration-none theme-text" href="#about">О нас</a></li>
+                                <li><a class="text-decoration-none theme-text" href="#portfolio">Портфолио</a></li>
+                                <li><a class="text-decoration-none theme-text" href="#reviews">Отзывы</a></li>
+                                <li><a class="text-decoration-none theme-text" href="#contact">Контактная форма</a></li>
+                            </ul>
                         </li>
                     </ul>
+
+                    <ul class="navbar-nav me-auto d-none d-lg-flex">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#about">О нас</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#portfolio">Портфолио</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#reviews">Отзывы</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#contact">Контактная форма</a></li>
+                    </ul>
+
                 </div>
             </div>
         </nav>
     </section>
 
-    <!-- модальное окно -->
+    <!-- modal window -->
     <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content theme-bg">
@@ -64,6 +69,7 @@
                             class="bi bi-check2-circle"></i></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
+
                 <div class="modal-body d-flex justify-content-center align-items-center text-center">
                     <ul class="list-unstyled">
                         <li><a class="fs-5 text-decoration-none theme-text" href="404.html">Backend as a Service
@@ -95,7 +101,8 @@
     <section class="container py-3 scroll-animate" id="home">
         <div class="row align-items-center">
             <div class="img-main col-md-6 text-center">
-                <img class="img-fluid rounded" src="https://picsum.photos/id/668/1920/1080" alt="">
+                <img class="img-fluid rounded" src="https://picsum.photos/id/668/1920/1080"
+                    alt="Use a VPN to display it correctly">
             </div>
             <div class="col-md-6 text-center text-md-start py-3 scroll-animate delay-1">
                 <h1 class="header fs-2 fw-bold">Будущее IT начинается здесь!</h1>
@@ -123,11 +130,12 @@
         <div class="row g-4 justify-content-center">
             <h1 class="fw-bold">Почему нужно выбрать именно нас</h1>
 
-            <!-- Карточка 1 -->
+            <!-- card 1 -->
 
             <div class="col-md-3 scroll-animate delay-1">
                 <div class="card h-100">
-                    <img src="https://picsum.photos/1920/1080?random=1" class="card-img-top" alt="">
+                    <img src="https://picsum.photos/1920/1080?random=1" class="card-img-top"
+                        alt="Use a VPN to display it correctly">
                     <div class="card-body">
                         <h5 class="card-title">Эффективность</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in
@@ -138,11 +146,12 @@
                 </div>
             </div>
 
-            <!-- Карточка 2 -->
+            <!-- card 2 -->
 
             <div class="col-md-3 scroll-animate delay-2">
                 <div class="card h-100">
-                    <img src="https://picsum.photos/1920/1080?random=2" class="card-img-top" alt="Пример изображения">
+                    <img src="https://picsum.photos/1920/1080?random=2" class="card-img-top"
+                        alt="Use a VPN to display it correctly">
                     <div class="card-body">
                         <h5 class="card-title">Скорость</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in
@@ -153,11 +162,12 @@
                 </div>
             </div>
 
-            <!-- Карточка 3 -->
+            <!-- card 3 -->
 
             <div class="col-md-3 scroll-animate delay-3">
                 <div class="card h-100">
-                    <img src="https://picsum.photos/1920/1080?random=3" class="card-img-top" alt="Пример изображения">
+                    <img src="https://picsum.photos/1920/1080?random=3" class="card-img-top"
+                        alt="Use a VPN to display it correctly">
                     <div class="card-body">
                         <h5 class="card-title">Цена/Качество</h5>
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in
@@ -179,7 +189,8 @@
 
             <div class="col-12 col-md-6 scroll-animate">
                 <div class="custom-card h-100">
-                    <img src="https://picsum.photos/1920/1080?random=4" class="card-img-top" alt="">
+                    <img src="https://picsum.photos/1920/1080?random=4" class="card-img-top"
+                        alt="Use a VPN to display it correctly">
                     <div class="card-body">
                         <p class="card-text py-3 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Pellentesque in
@@ -191,7 +202,8 @@
 
             <div class="col-12 col-md-6 scroll-animate delay-1">
                 <div class="custom-card h-100">
-                    <img src="https://picsum.photos/1920/1080?random=5" class="card-img-top" alt="">
+                    <img src="https://picsum.photos/1920/1080?random=5" class="card-img-top"
+                        alt="Use a VPN to display it correctly">
                     <div class="card-body">
                         <p class="card-text py-3 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Pellentesque in
@@ -203,7 +215,8 @@
 
             <div class="col-12 col-md-6 scroll-animate delay-2">
                 <div class="custom-card h-100">
-                    <img src="https://picsum.photos/1920/1080?random=6" class="card-img-top" alt="">
+                    <img src="https://picsum.photos/1920/1080?random=6" class="card-img-top"
+                        alt="Use a VPN to display it correctly">
                     <div class="card-body">
                         <p class="card-text py-3 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Pellentesque in
@@ -215,7 +228,8 @@
 
             <div class="col-12 col-md-6 scroll-animate delay-3">
                 <div class="custom-card h-100">
-                    <img src="https://picsum.photos/1920/1080?random=7" class="card-img-top" alt="">
+                    <img src="https://picsum.photos/1920/1080?random=7" class="card-img-top"
+                        alt="Use a VPN to display it correctly">
                     <div class="card-body">
                         <p class="card-text py-3 px-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Pellentesque in
@@ -237,7 +251,6 @@
 
             <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                <!-- Кнопки управления -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -248,9 +261,10 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-                <!-- Слайды -->
+
+                <!-- slides -->
                 <div class="carousel-inner">
-                    <!-- Отзыв 1 -->
+                    <!-- rw 1 -->
                     <div class="carousel-item active">
                         <div class="review-card mx-auto">
                             <div class="review-header d-flex align-items-center mb-4">
@@ -273,7 +287,7 @@
                         </div>
                     </div>
 
-                    <!-- Отзыв 2 -->
+                    <!-- rw 2 -->
                     <div class="carousel-item">
                         <div class="review-card mx-auto">
                             <div class="review-header d-flex align-items-center mb-4">
@@ -296,7 +310,7 @@
                         </div>
                     </div>
 
-                    <!-- Отзыв 3 -->
+                    <!-- rw 3 -->
                     <div class="carousel-item">
                         <div class="review-card">
                             <div class="review-header d-flex align-items-center mb-4">
@@ -337,7 +351,6 @@
                 <h2 class="text-center pb-4 scroll-animate delay-1">Авторизация</h2>
                 <form class="needs-validation" novalidate>
 
-                    <!-- Поле Email с валидацией -->
                     <div class="mb-3 text-md-start scroll-animate delay-2">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" placeholder="Введите email" required
@@ -350,7 +363,6 @@
                         </div>
                     </div>
 
-                    <!-- Поле Пароль с валидацией -->
                     <div class="mb-3 text-md-start scroll-animate delay-2">
                         <label for="password" class="form-label">Пароль</label>
                         <input type="password" class="form-control" id="password" placeholder="Введите пароль" required
@@ -366,7 +378,6 @@
                     <button type="submit" class="btn btn-more w-100 mt-3 scroll-animate delay-1">Войти</button>
                 </form>
 
-                <!-- Дополнительные ссылки -->
                 <p class="text-center mt-3">
                     <a class="theme-text" href="404.html">Забыли пароль?</a>
                 </p>
@@ -379,10 +390,11 @@
     </section>
 
     <!-- footer -->
+
     <section class="theme-bg-dark mt-5 py-4 text text-white border-top scroll-animate" id="footer">
         <footer class="container py-5">
             <div class="row g-4 container-fluid">
-                <!-- О компании -->
+
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="footer-section mb-4 text-start">
                         <h3 class="h5 mb-3">О нашей компании</h3>
@@ -401,7 +413,6 @@
                     </div>
                 </div>
 
-                <!-- Навигация -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="footer-section mb-4 text-start">
                         <h3 class="h5 mb-3">Навигация</h3>
@@ -417,7 +428,6 @@
                     </div>
                 </div>
 
-                <!-- Услуги -->
                 <div class="col-6 col-md-3 col-lg-2">
                     <div class="footer-section mb-4 text-start">
                         <h3 class="h5 mb-3">Услуги</h3>
@@ -431,7 +441,6 @@
                     </div>
                 </div>
 
-                <!-- Контакты -->
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="footer-section mb-4 text-start">
                         <h3 class="h5 mb-3">Контакты</h3>
@@ -456,7 +465,7 @@
             </div>
 
         </footer>
-        <!-- Копирайт -->
+
         <div class="pt-4 text-center border-top scroll-animate delay-2">
             <p class="small theme-text mb-0 text-center">
                 © 2025 Название компании. Все права защищены.
